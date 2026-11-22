@@ -1,0 +1,22 @@
+{
+  "experiment": "RouteOpt Phase 3 - reproducible algorithm benchmark",
+  "customer_sizes": [
+    5,
+    8,
+    12,
+    20
+  ],
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "exact_search_max_customers": 8,
+  "environment": {
+    "python": "3.11.8 (v3.11.8:db85d51d3e, Feb  6 2024, 18:02:37) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2"
+  }
+}
