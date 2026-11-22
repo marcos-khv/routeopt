@@ -1,4 +1,5 @@
-numpy
+numpy<2
 matplotlib
 pandas
 ipykernel
+ortools>=9.14,<9.15

@@ -30,7 +30,8 @@ Implemented and tested:
 - Nearest Neighbor heuristic
 - Brute Force exact search
 - 2-opt local search
-- Three-algorithm comparison script
+- Google OR-Tools TSP solver
+- Algorithm comparisons for Nearest Neighbor, 2-opt, Brute Force, and OR-Tools
 
 Automated tests are in `tests/`. Run them with:
 
@@ -50,3 +51,5 @@ python3 benchmark.py
 This generates raw results and a comparison figure in `results/`. To work interactively with the same workflow, open `notebooks/routeopt_benchmark.ipynb` and run all cells.
 
 The benchmark uses fixed random seeds, 5/8/12/20-customer synthetic instances and three timing repetitions. Brute Force is limited to at most 8 customers to avoid factorial search on impractical instance sizes.
+
+The OR-Tools comparison is documented in `notebooks/routeopt_ortools_comparison.ipynb`. It evaluates OR-Tools on the same 30-seed instances as the robustness experiment, with a 0.05-second solver limit per run. Install dependencies with `python3 -m pip install -r requirements.txt`.
